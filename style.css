@@ -73,3 +73,53 @@
       -webkit-box-shadow: 0 0 0 0 rgba(255,0,0, 0);
   }
 }
+/* adjusted the profile icons to the approriate theme icons colour */
+.wpf-prof-footer > .wpf-prof-buttons > a > i{
+	color: #14213D;
+}
+
+/*  adjusted the logo to have animation of a type of glitch (with moving animation and moving to the left) */
+
+#site-logo-inner {
+  color: rgb(223, 191, 191);
+  position: relative;
+  font-size: 3vw;
+  // margin: 70px 200px;
+  animation: glitch 5s 5s infinite;
+}
+
+#site-logo-inner::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: -5px 0 magenta;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+
+#site-logo-inner::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -5px 0 lightgreen;
+  background: black;
+  overflow: hidden;
+  top: -10;
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+/* keyframe of the glitching process */
+@keyframes glitch {
+  1%{
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2%{
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+/* adjusted the dropdown menu to be more right since it was overwriting on other menu */
+#searchform-dropdown.header-searchform-wrap.clr.show{
+	right:-105px;
+}
