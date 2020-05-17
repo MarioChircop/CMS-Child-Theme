@@ -132,9 +132,13 @@ line-height:40px;
 margin:0 5px 0 0;
 }
 
-
-
 /* adjusted the top bar menu since it was not being changed by the theme custmisation that's why there was !important */
 #menu-item-368 > .sub-menu a {
 	color: white !important;
+}
+
+/* adjusted the top bar menu since it was not being changed by the theme custmisation that's why there was !important */
+#menu-item-368 > .sub-menu a:hover {
+	color: #14213D !important;
+	background-color: white !important;
 }
