@@ -123,3 +123,18 @@
 #searchform-dropdown.header-searchform-wrap.clr.show{
 	right:-105px;
 }
+/* adjusted the dropcap shortcode with the stlye i want */;
+.dropcap {
+display:block;
+float:left;
+font-size:50px;
+line-height:40px;
+margin:0 5px 0 0;
+}
+
+
+
+/* adjusted the top bar menu since it was not being changed by the theme custmisation that's why there was !important */
+#menu-item-368 > .sub-menu a {
+	color: white !important;
+}
