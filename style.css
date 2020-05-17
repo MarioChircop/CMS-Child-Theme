@@ -20,3 +20,24 @@
 #footer h4.widget-title {
 	line-height: 3;
 }
+/* commit 3 : added a calendar box box shadow and padding to look like a box */
+#calendar-5 {
+	box-shadow: 5px 5px;
+	border: 1px solid;
+  	padding: 10px
+}
+
+
+/* commit 4 : added a Text behind the logo so if the logo doesn't load the text is a more Big */
+#site-header-inner > #site-logo > #site-logo-inner > a.site-logo-text {
+	font-size: 30px;
+	margin: 0;
+}
+
+
+/* commit 5 : adjusted the to bar nav  for the weight to be bold like style and the font size to be bigger*/ 
+#top-bar-nav{
+	font-weight: 900;
+	border-style: double;
+	font-size: 15px
+}
