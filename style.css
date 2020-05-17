@@ -1,0 +1,22 @@
+/*
+ Theme Name:   OceanWp Child Theme
+ Description:  my child theme for OceanWp
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     oceanwp
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* commit 1 : changes to the header padding and the page padding since padding wasn't symettrical of footer;  */
+
+#main > #content-wrap.container.clr {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+/* commit 2 : footer line height was arranged to look more stylish and more height */
+#footer h4.widget-title {
+	line-height: 3;
+}
